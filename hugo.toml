@@ -1,4 +1,140 @@
-baseURL = 'http://orbitalsystems.dev/'
+baseURL = 'https://quantumcircuit.biz'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "hermit"
+title = 'Quantum Circuit'
+theme = "PaperMod"
+
+# PaperMod Settings
+[params]
+# defaultTheme = "auto"
+# disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = false
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
+
+  [params.assets]
+  # disableHLJS = true
+  # disableFingerprinting = true
+  favicon = "<link / abs url>"
+  favicon16x16 = "<link / abs url>"
+  favicon32x32 = "<link / abs url>"
+  apple_touch_icon = "<link / abs url>"
+  safari_pinned_tab = "<link / abs url>"
+
+  [params.label]
+  # text = "Home"
+  # icon = "/apple-touch-icon.png"
+  # iconHeight = 35
+
+  [params.profileMode]
+  # enabled = false
+  # title = "ExampleSite"
+  # subtitle = "This is subtitle"
+  # imageUrl = "<img location>"
+  # imageWidth = 120
+  # imageHeight = 120
+  # imageTitle = "my image"
+
+    # [[params.profileMode.buttons]]
+    # name = "Posts"
+    # url = "posts"
+
+    # [[params.profileMode.buttons]]
+    # name = "Tags"
+    # url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Welcome to the Digital Frontier"
+  Content = """
+  🚀 Dive into the bits, bytes, and business of tomorrow!
+
+  Here at Bits, Business & Beyond, we're:
+  - 💻 Taming wild networks
+  - 🧠 Decoding the DNA of data science
+  - 🏗️ Building bridges between tech and economics
+
+  Join me on this journey through the digital landscape, where we turn 
+  coffee into code and curiosity into innovation. Whether you're a 
+  seasoned tech veteran or a curious newcomer, there's always 
+  something new to discover.
+
+  Ready to explore? Let's byte in! 🍎👨‍💻
+  """
+
+  [[params.socialIcons]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/salman-almuzaini/"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Falcon-Super"
+
+  # [[params.socialIcons]]
+  # name = "KoFi"
+  # url = "https://ko-fi.com/"
+
+  [params.cover]
+  # hidden = true
+  # hiddenInList = true
+  # hiddenInSingle = true
+
+  [params.editPost]
+  # URL = "https://github.com/<path_to_repo>/content"
+  # Text = "Suggest Changes"
+  # appendFilePath = true
+
+  [params.fuseOpts]
+  # isCaseSensitive = false
+  # shouldSort = true
+  # location = 0
+  # distance = 1_000
+  # threshold = 0.4
+  # minMatchCharLength = 0
+  # keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "Posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "About"
+name = "About"
+url = "/posts/about"
+weight = 20
+
+[[menu.main]]
+identifier = "Categories"
+name = "Categories"
+url = "/categories/"
+weight = 30
+
+[[menu.main]]
+identifier = "tags"
+name = "tags"
+url = "/tags/"
+weight = 40
+
+[[menu.main]]
+identifier = "Archive"
+name = "Archive"
+url = "/archive/"
+weight = 50
+
+# [markup.highlight]
+# noClasses = false
+
+# [markup.goldmark.renderer]
+# unsafe = true
