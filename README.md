@@ -24,7 +24,7 @@ This blog is built using [Hugo](https://gohugo.io/), a fast and flexible static 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/quantumcircuit.biz.git
+   git clone https://github.com/Falcon-Super/quantumcircuit.biz.git
    cd quantumcircuit.biz
    ```
 
