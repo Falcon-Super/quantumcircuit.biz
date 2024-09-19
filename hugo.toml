@@ -55,21 +55,18 @@ tocopen = false
     # url = "tags"
 
   [params.homeInfoParams]
-  Title = "Welcome to the Digital Frontier"
+  Title = "Welcome to Quantum Circuit"
   Content = """
-  🚀 Dive into the bits, bytes, and business of tomorrow!
-
-  Here at Bits, Business & Beyond, we're:
-  - 💻 Taming wild networks
-  - 🧠 Decoding the DNA of data science
-  - 🏗️ Building bridges between tech and economics
-
-  Join me on this journey through the digital landscape, where we turn 
-  coffee into code and curiosity into innovation. Whether you're a 
-  seasoned tech veteran or a curious newcomer, there's always 
-  something new to discover.
-
-  Ready to explore? Let's byte in! 🍎👨‍💻
+  🚀 Discover quantum leaps in technology and business!
+  Here at quantumcircuit.biz, we're exploring:
+  - 💻 Breakthrough technologies reshaping industries
+  - 🧠 Revolutionary business models of tomorrow
+  - 🏗️ Intersections of cutting-edge tech and economic transformation
+  Join us on this exhilarating journey through the frontiers of innovation, where we turn
+  disruptive ideas into quantum leaps for business and technology. Whether you're a
+  seasoned entrepreneur, a tech enthusiast, or a curious innovator, there's always
+  a new paradigm shift to uncover.
+  Ready to make your quantum leap? Let's accelerate into the future! 🌠💡
   """
 
   [[params.socialIcons]]
