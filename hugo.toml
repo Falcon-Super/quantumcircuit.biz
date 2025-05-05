@@ -1,137 +1,115 @@
-baseURL = 'https://quantumcircuit.biz'
-languageCode = 'en-us'
-title = 'Quantum Circuit'
+# hugo.toml - Configuration for Quantum Circuit
+# This file follows clean, minimalistic, and well-commented style
+# Ensure all paths are absolute and configurations are explicit
+
+# Basic site configuration
+baseURL = "https://quantumcircuit.biz"
+languageCode = "en-us"
+title = "Quantum Circuit"
 theme = "PaperMod"
 
-# PaperMod Settings
+# Publishing configuration
+publishDir = "public"
+disableKinds = ["RSS"]  # We handle RSS manually if needed
+
+# Favicon configuration
+[params.assets]
+  favicon = "/static/favicon.ico"
+
+# PaperMod Theme Configuration
 [params]
-# defaultTheme = "auto"
-# disableThemeToggle = false
-ShowReadingTime = true
-ShowShareButtons = false
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowWordCount = false
-ShowRssButtonInSectionTermList = true
-UseHugoToc = false
-disableSpecial1stPost = false
-disableScrollToTop = false
-comments = false
-hidemeta = false
-hideSummary = false
-showtoc = true
-tocopen = false
-
-  [params.assets]
-  # disableHLJS = true
-  # disableFingerprinting = true
-  favicon = "<link / abs url>"
-  favicon16x16 = "<link / abs url>"
-  favicon32x32 = "<link / abs url>"
-  apple_touch_icon = "<link / abs url>"
-  safari_pinned_tab = "<link / abs url>"
-
-  [params.label]
-  # text = "Home"
-  # icon = "/apple-touch-icon.png"
-  # iconHeight = 35
-
-  [params.profileMode]
-  # enabled = false
-  # title = "ExampleSite"
-  # subtitle = "This is subtitle"
-  # imageUrl = "<img location>"
-  # imageWidth = 120
-  # imageHeight = 120
-  # imageTitle = "my image"
-
-    # [[params.profileMode.buttons]]
-    # name = "Posts"
-    # url = "posts"
-
-    # [[params.profileMode.buttons]]
-    # name = "Tags"
-    # url = "tags"
-
+  # Display settings - Keep interface minimal but informative
+  ShowReadingTime = true  # Show estimated reading time
+  ShowShareButtons = true  # Enable share buttons for content sharing
+  ShowPostNavLinks = true  # Enable previous/next navigation between posts
+  ShowBreadCrumbs = true  # Enable breadcrumbs for better navigation
+  ShowCodeCopyButtons = true  # Enable code copy buttons for technical content
+  ShowWordCount = false  # Word count isn't critical for our content
+  ShowRssButtonInSectionTermList = true  # RSS is important for subscribers
+  
+  # Table of Contents settings
+  UseHugoToc = false  # We prefer custom TOC implementation
+  showtoc = true  # Show TOC on posts
+  tocopen = false  # TOC starts closed by default
+  
+  # Interface elements
+  disableSpecial1stPost = false  # Allow special styling for featured content
+  disableScrollToTop = false  # Enable scroll to top button
+  comments = false  # We handle comments through external service
+  hidemeta = false  # Show metadata for transparency
+  hideSummary = false  # Show summaries in lists
+  
+  # Homepage configuration - Restored homepage settings
   [params.homeInfoParams]
-  Title = "Welcome to Quantum Circuit"
-  Content = """
-  🚀 Discover quantum leaps in technology and business!
-  Here at quantumcircuit.biz, we're exploring:
-  - 💻 Breakthrough technologies reshaping industries
-  - 🧠 Revolutionary business models of tomorrow
-  - 🏗️ Intersections of cutting-edge tech and economic transformation
-  Join us on this exhilarating journey through the frontiers of innovation, where we turn
-  disruptive ideas into quantum leaps for business and technology. Whether you're a
-  seasoned entrepreneur, a tech enthusiast, or a curious innovator, there's always
-  a new paradigm shift to uncover.
-  Ready to make your quantum leap? Let's accelerate into the future! 🌠💡
-  """
+    Title = "Welcome to Quantum Circuit"
+    Content = """
+    🚀 Discover quantum leaps in technology and business!
+    Here at quantumcircuit.biz, we're exploring:
+    - 💻 Breakthrough technologies reshaping industries
+    - 🧠 Revolutionary business models of tomorrow
+    - 🏗️ Intersections of cutting-edge tech and economic transformation
+    Join us on this exhilarating journey through the frontiers of innovation, where we turn
+    disruptive ideas into quantum leaps for business and technology. Whether you're a
+    seasoned entrepreneur, a tech enthusiast, or a curious innovator, there's always
+    a new paradigm shift to uncover.
+    Ready to make your quantum leap? Let's accelerate into the future! 🌠💡
+    """
+
+  # Social media configuration
+  [[params.socialIcons]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/salman-almuzaini/"
 
   [[params.socialIcons]]
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/in/salman-almuzaini/"
+    name = "GitHub"
+    url = "https://github.com/Falcon-Super"
 
-  [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/Falcon-Super"
-
-  # [[params.socialIcons]]
-  # name = "KoFi"
-  # url = "https://ko-fi.com/"
-
-  [params.cover]
-  # hidden = true
-  # hiddenInList = true
-  # hiddenInSingle = true
-
-  [params.editPost]
-  # URL = "https://github.com/<path_to_repo>/content"
-  # Text = "Suggest Changes"
-  # appendFilePath = true
-
-  [params.fuseOpts]
-  # isCaseSensitive = false
-  # shouldSort = true
-  # location = 0
-  # distance = 1_000
-  # threshold = 0.4
-  # minMatchCharLength = 0
-  # keys = ["title", "permalink", "summary", "content"]
+# Menu configuration - Explicit and well-organized
+[[menu.main]]
+  identifier = "Posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
 
 [[menu.main]]
-identifier = "Posts"
-name = "Posts"
-url = "/posts/"
-weight = 10
+  identifier = "About"
+  name = "About"
+  url = "/posts/about"
+  weight = 20
 
 [[menu.main]]
-identifier = "About"
-name = "About"
-url = "/posts/about"
-weight = 20
+  identifier = "Categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 30
 
 [[menu.main]]
-identifier = "Categories"
-name = "Categories"
-url = "/categories/"
-weight = 30
+  identifier = "Tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 40
 
 [[menu.main]]
-identifier = "tags"
-name = "tags"
-url = "/tags/"
-weight = 40
+  identifier = "Archive"
+  name = "Archive"
+  url = "/archive/"
+  weight = 50
 
-[[menu.main]]
-identifier = "Archive"
-name = "Archive"
-url = "/archive/"
-weight = 50
+# Performance optimizations - Cloud-native efficiency
+[build]
+  # Enable efficient building
+  enableInlineShortcodes = true
+  disablePathTranslation = true
 
-# [markup.highlight]
-# noClasses = false
+# Security and privacy configuration - Privacy-focused mindset
+[privacy]
+  # Disable unnecessary tracking
+  disableGoogleAnalytics = true
+  # We handle comments through external service
+  # disable third-party comment tracking
 
-# [markup.goldmark.renderer]
-# unsafe = true
+# Cover image configuration for visual appeal
+[params.cover]
+  hidden = false  # Show cover image
+  hiddenInList = true  # Hide in list views
+  hiddenInSingle = false  # Show in single post view
